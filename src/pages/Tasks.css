@@ -1,0 +1,163 @@
+
+   /* Tasks Page */
+
+
+.tasks-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.tasks-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2563eb;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   Input Section
+========================= */
+
+.task-input {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 15px;
+    font-size: 17px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.task-input input:focus {
+    border-color: #2563eb;
+}
+
+.task-input button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-input button:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   Task List
+========================= */
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-info input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.task-info span {
+    font-size: 18px;
+    color: #333;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* =========================
+   Delete Button
+========================= */
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+/* =========================
+   Summary
+========================= */
+
+.summary {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.summary h3 {
+    color: #444;
+    font-size: 22px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .task-input {
+        flex-direction: column;
+    }
+
+    .task-input button {
+        width: 100%;
+    }
+
+    .task-card {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .delete-btn {
+        width: 100%;
+    }
+}
